@@ -159,19 +159,19 @@ fun MainScreen() {
 
 
 
-@Composable
-fun StudentCardWidget(
-    nameRes: Int,
-    detailRes: Int?,
-    locationRes: Int,
-    backgroundColorRes: Int
+Card(
+shape = RoundedCornerShape(16.dp),
+colors = CardDefaults.cardColors(
+containerColor = colorResource(backgroundColorRes)
+)
 ) {
-    Card(
-        colors = CardDefaults.cardColors(
-            containerColor = colorResource(backgroundColorRes)
-        )
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(16.dp),
+        verticalAlignment = Alignment.CenterVertically
     ) {
-        Column(modifier = Modifier.padding(16.dp)) {
+        Column {
             Text(stringResource(nameRes))
 
             if (detailRes != null) {
