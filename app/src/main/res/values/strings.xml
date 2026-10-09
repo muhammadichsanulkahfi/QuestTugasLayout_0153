@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Teknologi Informasi</string>
+    <string name="title_dept">Teknologi Informasi</string>
+    <string name="subtitle_univ">Universitas Muhammadiyah Yogyakarta</string>
+    <string name="footer_copyright">Copyright, 2026</string>
+
+    <!-- Student 1 (Data Diri) -->
+    <string name="student1_name">Muhammad Ikhsanul Kahfi</string>
+    <string name="student1_nim">085210602749</string>
+    <string name="student1_location">GONDOKUSUMAN</string>
+
+    <!-- Student 2 -->
+    <string name="student2_name">Muhammad Ikhsanul Faqih</string>
+    <string name="student2_phone">081295363332</string>
+    <string name="student2_location">GONDOKUSUMAN</string>
+
+    <!-- Student 3 -->
+    <string name="student3_name">Dimas Prastyo Aditama</string>
+    <string name="student3_phone">085436874190</string>
+    <string name="student3_location">Depok, Sleman</string>
+
+    <!-- Student 4 -->
+    <string name="student4_name">Danar Rohman Rozaqi</string>
+    <string name="student4_phone">085436874190</string>
+    <string name="student4_location">Gamping, Sleman</string>
+</resources>
