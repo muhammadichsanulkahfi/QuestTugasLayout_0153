@@ -158,15 +158,20 @@ fun MainScreen() {
 
 
 
-@Composable
-fun MainScreen() {
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(20.dp),
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Text(stringResource(R.string.title_dept))
-        Text(stringResource(R.string.subtitle_univ))
-    }
-}
+Text(
+text = stringResource(R.string.title_dept),
+fontSize = 24.sp,
+fontWeight = FontWeight.Bold,
+color = colorResource(R.color.text_black)
+)
+
+Spacer(modifier = Modifier.height(4.dp))
+
+Text(
+text = stringResource(R.string.subtitle_univ),
+fontSize = 14.sp,
+fontWeight = FontWeight.Bold,
+color = colorResource(R.color.text_black)
+)
+
+Spacer(modifier = Modifier.height(20.dp))
