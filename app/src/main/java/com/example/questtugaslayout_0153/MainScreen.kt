@@ -159,7 +159,9 @@ fun MainScreen() {
 
 
 
-import androidx.compose.foundation.Image
-import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.res.colorResource
-import androidx.compose.ui.res.stringResource
+@Composable
+fun StudentCardWidget() {
+    Card {
+        Text("Mahasiswa")
+    }
+}
