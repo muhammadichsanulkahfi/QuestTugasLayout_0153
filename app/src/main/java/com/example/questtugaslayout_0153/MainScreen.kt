@@ -159,10 +159,20 @@ fun MainScreen() {
 
 
 
-Image(
-painter = painterResource(R.drawable._1942014),
-contentDescription = null,
-modifier = Modifier.size(56.dp)
-)
+Column(
+modifier = Modifier
+.weight(1f)
+.padding(horizontal = 12.dp)
+) {
+    Text(
+        text = stringResource(nameRes),
+        fontWeight = FontWeight.Bold,
+        fontSize = 20.sp
+    )
 
-Spacer(modifier = Modifier.width(12.dp))
+    if (detailRes != null) {
+        Text(stringResource(detailRes))
+    }
+
+    Text(stringResource(locationRes))
+}
