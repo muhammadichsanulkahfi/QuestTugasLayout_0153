@@ -158,9 +158,8 @@ fun MainScreen() {
 
 
 
-Text(
-text = stringResource(R.string.footer_copyright),
-fontSize = 12.sp,
-color = colorResource(R.color.text_black),
-modifier = Modifier.padding(vertical = 8.dp)
-)
+Column(
+modifier = Modifier.weight(1f)
+) {
+    // Empat pemanggilan StudentCardWidget
+}
