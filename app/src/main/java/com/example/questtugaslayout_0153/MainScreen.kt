@@ -159,26 +159,10 @@ fun MainScreen() {
 
 
 
-Card(
-shape = RoundedCornerShape(16.dp),
-colors = CardDefaults.cardColors(
-containerColor = colorResource(backgroundColorRes)
+Image(
+painter = painterResource(R.drawable._1942014),
+contentDescription = null,
+modifier = Modifier.size(56.dp)
 )
-) {
-    Row(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(16.dp),
-        verticalAlignment = Alignment.CenterVertically
-    ) {
-        Column {
-            Text(stringResource(nameRes))
 
-            if (detailRes != null) {
-                Text(stringResource(detailRes))
-            }
-
-            Text(stringResource(locationRes))
-        }
-    }
-}
+Spacer(modifier = Modifier.width(12.dp))
