@@ -158,21 +158,8 @@ fun MainScreen() {
 
 
 
-
-Column(
-modifier = Modifier
-.weight(1f)
-.padding(horizontal = 12.dp)
-) {
-    Text(
-        text = stringResource(nameRes),
-        fontWeight = FontWeight.Bold,
-        fontSize = 20.sp
-    )
-
-    if (detailRes != null) {
-        Text(stringResource(detailRes))
-    }
-
-    Text(stringResource(locationRes))
-}
+Image(
+painter = painterResource(R.drawable._1942014),
+contentDescription = null,
+modifier = Modifier.size(56.dp)
+)
