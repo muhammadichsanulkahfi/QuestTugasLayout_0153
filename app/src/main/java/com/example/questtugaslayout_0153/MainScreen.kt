@@ -158,23 +158,9 @@ fun MainScreen() {
 
 
 
-StudentCardWidget(
-nameRes = R.string.student2_name,
-detailRes = R.string.student2_phone,
-locationRes = R.string.student2_location,
-backgroundColorRes = R.color.card_purple
-)
-
-StudentCardWidget(
-nameRes = R.string.student3_name,
-detailRes = R.string.student3_phone,
-locationRes = R.string.student3_location,
-backgroundColorRes = R.color.card_blue
-)
-
-StudentCardWidget(
-nameRes = R.string.student4_name,
-detailRes = R.string.student4_phone,
-locationRes = R.string.student4_location,
-backgroundColorRes = R.color.card_green
+Text(
+text = stringResource(R.string.footer_copyright),
+fontSize = 12.sp,
+color = colorResource(R.color.text_black),
+modifier = Modifier.padding(vertical = 8.dp)
 )
