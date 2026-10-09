@@ -160,8 +160,8 @@ fun MainScreen() {
 
 
 @Composable
-fun StudentCardWidget() {
+fun StudentCardWidget(nameRes: Int) {
     Card {
-        Text("Mahasiswa")
+        Text(text = stringResource(nameRes))
     }
 }
