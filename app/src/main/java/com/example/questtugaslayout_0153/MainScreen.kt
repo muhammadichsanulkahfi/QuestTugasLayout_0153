@@ -162,15 +162,18 @@ fun MainScreen() {
 @Composable
 fun StudentCardWidget(
     nameRes: Int,
-    detailRes: Int?
+    detailRes: Int?,
+    locationRes: Int
 ) {
     Card {
         Column {
-            Text(text = stringResource(nameRes))
+            Text(stringResource(nameRes))
 
             if (detailRes != null) {
-                Text(text = stringResource(detailRes))
+                Text(stringResource(detailRes))
             }
+
+            Text(stringResource(locationRes))
         }
     }
 }
