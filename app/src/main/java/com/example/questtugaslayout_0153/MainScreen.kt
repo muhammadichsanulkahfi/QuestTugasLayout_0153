@@ -158,20 +158,9 @@ fun MainScreen() {
 
 
 
-Text(
-text = stringResource(R.string.title_dept),
-fontSize = 24.sp,
-fontWeight = FontWeight.Bold,
-color = colorResource(R.color.text_black)
+StudentCardWidget(
+nameRes = R.string.student1_name,
+detailRes = R.string.student1_nim,
+locationRes = R.string.student1_location,
+backgroundColorRes = R.color.card_gray
 )
-
-Spacer(modifier = Modifier.height(4.dp))
-
-Text(
-text = stringResource(R.string.subtitle_univ),
-fontSize = 14.sp,
-fontWeight = FontWeight.Bold,
-color = colorResource(R.color.text_black)
-)
-
-Spacer(modifier = Modifier.height(20.dp))
