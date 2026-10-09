@@ -158,8 +158,15 @@ fun MainScreen() {
 
 
 
-Image(
-painter = painterResource(R.drawable._1942014),
-contentDescription = null,
-modifier = Modifier.size(56.dp)
-)
+@Composable
+fun MainScreen() {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(20.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(stringResource(R.string.title_dept))
+        Text(stringResource(R.string.subtitle_univ))
+    }
+}
