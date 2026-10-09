@@ -159,8 +159,22 @@ fun MainScreen() {
 
 
 StudentCardWidget(
-nameRes = R.string.student1_name,
-detailRes = R.string.student1_nim,
-locationRes = R.string.student1_location,
-backgroundColorRes = R.color.card_gray
+nameRes = R.string.student2_name,
+detailRes = R.string.student2_phone,
+locationRes = R.string.student2_location,
+backgroundColorRes = R.color.card_purple
+)
+
+StudentCardWidget(
+nameRes = R.string.student3_name,
+detailRes = R.string.student3_phone,
+locationRes = R.string.student3_location,
+backgroundColorRes = R.color.card_blue
+)
+
+StudentCardWidget(
+nameRes = R.string.student4_name,
+detailRes = R.string.student4_phone,
+locationRes = R.string.student4_location,
+backgroundColorRes = R.color.card_green
 )
