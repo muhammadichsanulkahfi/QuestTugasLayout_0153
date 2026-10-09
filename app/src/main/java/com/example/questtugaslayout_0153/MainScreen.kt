@@ -163,10 +163,15 @@ fun MainScreen() {
 fun StudentCardWidget(
     nameRes: Int,
     detailRes: Int?,
-    locationRes: Int
+    locationRes: Int,
+    backgroundColorRes: Int
 ) {
-    Card {
-        Column {
+    Card(
+        colors = CardDefaults.cardColors(
+            containerColor = colorResource(backgroundColorRes)
+        )
+    ) {
+        Column(modifier = Modifier.padding(16.dp)) {
             Text(stringResource(nameRes))
 
             if (detailRes != null) {
